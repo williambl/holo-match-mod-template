@@ -7,6 +7,8 @@ public class ExampleMod : HoloMod {
     public string version = "v0.1";
 
     public override void RegisterWeapons(WeaponManager manager) {
+        Debug.Log(assetBundles.Count);
+        Debug.Log(assetBundles[0].GetAllAssetNames().ToString());
         Debug.Log(assetBundles[0].LoadAsset<GameObject>("TestAsset").name);
     }
 
