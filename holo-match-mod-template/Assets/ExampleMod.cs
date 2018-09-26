@@ -8,8 +8,8 @@ public class ExampleMod : HoloMod {
 
     public override void RegisterWeapons(WeaponManager manager) {
         Debug.Log(assetBundles.Count);
-        Debug.Log(assetBundles[0].GetAllAssetNames().ToString());
-        Debug.Log(assetBundles[0].LoadAsset<GameObject>("TestAsset").name);
+        Debug.Log(string.Join("", assetBundles[0].GetAllAssetNames()));
+        Debug.Log(assetBundles[0].LoadAsset<GameObject>("assets/prefabs/testprefab.prefab").name);
     }
 
     public override void RegisterMaps(MapManager manager) {
