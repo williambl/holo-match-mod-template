@@ -10,4 +10,5 @@ Temp
 *.userprefs
 *.app
 bin/*
+*.dll
 
